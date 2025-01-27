@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in Python related to mutable default arguments in functions.  The `function_with_uncommon_bug` function uses a list as its default argument.  The issue arises because the default argument is created only once, when the function is defined. Subsequent calls to the function modify the same default list, leading to unexpected behavior.
+
+The `bugSolution.py` file presents a corrected version using `None` as the default argument and handling the creation of the list inside the function.
